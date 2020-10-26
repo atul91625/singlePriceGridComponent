@@ -6,6 +6,9 @@
 body{
 	background-color: hsl(204, 43%, 93%);
 }
+.attribution{
+	text-align: center;
+}
 .app{
 	height: 97vh;
 	display: flex;
