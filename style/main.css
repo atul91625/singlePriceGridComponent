@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+	font-family: 'Karla', sans-serif;
+	font-size: 16px;
+}
+body{
+	background-color: hsl(204, 43%, 93%);
+}
+.app{
+	height: 97vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container{
+	width: 635px;
+}
+.row1{
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 16px 16px 0 0;
+}
+.row1 .title{
+	font-size: 24px;
+	color: hsl(179, 62%, 43%)
+}
+.row1 .sub{
+	font-size: 18px;
+	color: hsl(71, 73%, 54%);
+}
+.row1 .para{
+	font-size: 16px;
+	font-weight: 700;
+	color: hsl(218, 22%, 67%);
+}
+.row2{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	border-radius: 0 0 16px 16px;
+	background-color: #fff;
+}
+.row2 .col1{
+	padding: 15px 30px;
+	background-color: hsl(179, 62%, 43%);
+	border-radius: 0 0 0 16px; 
+}
+.row2 .col1 .sub{
+	font-size: 20px;
+	color: hsl(204, 43%, 93%);
+}
+.row2 .col1 .para{
+	color: hsl(204, 43%, 93%);
+}
+.row2 .col1 .sign{
+	width: 100%;
+	color: #fff;
+	background-color: hsl(71, 73%, 54%);
+	border: none;
+	padding: 12px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.row2 .col1 .para .rate{
+	font-weight: 700;
+	font-size: 32px;
+}
+.row2 .col1 .para .desc{
+	opacity: 0.65;
+}
+.row2 .col2{
+	padding: 15px 30px;
+	background-color: hsl(179, 62%, 43%);
+	opacity: 0.85;
+	border-radius: 0 0 16px 0;
+}
+.row2 .col2 .sub{
+	font-size: 20px;
+	color: hsl(204, 43%, 93%);
+}
+.row2 .col2 .list{
+	list-style: none;
+	padding: 0px;
+	color: hsl(204, 43%, 93%);
+}
+@media screen and (max-width: 550px) {
+	.container{
+		max-width: 375px;
+	}
+	.row2{
+		grid-template-columns: 100%;
+	}
+	.row2 .col2{
+		border-radius: 0 0 16px 16px;
+	}
+	.row2 .col1{
+		border-radius: 0;
+	}
+}
